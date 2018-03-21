@@ -15,27 +15,27 @@
             <form>
                 <div>
                     <label for="user-text">Text to analyze</label>
-                    <textarea cols="60" rows="20" id="user-text" name="user-text" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required></textarea>
+                    <textarea cols="60" rows="20" id="user-text" name="user-text" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required class="js-raw-text"></textarea>
                 </div>
                 <div>
                     <button type="submit">Analyze it!</button>
                 </div>
             </form>
 
-            <dl class="hidden text-report">
+            <dl class="hidden text-report js-text-report">
                 <dt>Word count</dt>
+                <dd class="js-word-count"></dd>
+
+                <dt class="js-unique-word">Unique word count</dt>
                 <dd></dd>
 
-                <dt>Unique word count</dt>
-                <dd></dd>
-
-                <dt>Average word length</dt>
+                <dt class="js-word-length">Average word length</dt>
                 <dd></dd>
             </dl>
         </main>
     </div>
 
-    <!-- link to jquery -->
-    <!-- link to your app.js -->
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
